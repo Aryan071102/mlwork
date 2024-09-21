@@ -3,6 +3,7 @@ import joblib
 import numpy as np
 # Streamlit app title
 st.title("Temperature Prediction App")
+model = joblib.load('gbr_model.joblib')
 
 # User input for rain, windspeed, and humidity
 rain = st.number_input("Enter the rain (in mm):", min_value=0.0, step=0.1)
