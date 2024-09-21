@@ -1,10 +1,6 @@
 import streamlit as st
 import joblib
 import numpy as np
-
-# Load the trained Gradient Boosting Regressor model
-model = joblib.load('gbr_model.joblib')
-
 # Streamlit app title
 st.title("Temperature Prediction App")
 
